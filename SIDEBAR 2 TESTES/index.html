@@ -21,18 +21,21 @@
 </head>
 <body>
 
+    <!--botão de guardar/revelar sidebar-->
     <div class="botao">
         <span class='bx bx-left-arrow'></span> 
     </div>
 
+    <!--INÍCIO da sidebar-->
     <nav class="sidebar">
         <div class="text"><span class='bx bxs-t-shirt'></span> Brechó</div>
+        <!--ul contém os items da sidebar-->
         <ul>
             <li>
                 <a href="#" class="pasta-homem"><i class='bx bx-male-sign'></i> Masculino
                     <span class='bx bxs-down-arrow seta-homem'></span>
                 </a>
-        
+                <!--uma ul dentro de outra ul corresponde á uma pasta-->
                 <ul class="moda-homem">
                     <li><a href="#">Infantil</a></li>
                     <li><a href="#">Jovem</a></li>
@@ -60,9 +63,14 @@
         </ul>
         
     </nav>
+    <!--FIM da sidebar-->
 
+    <!--INÍCIO da vitrine-->
+
+    <!--texto que mostrará o público[MASCULINO/FEMININO] e a moda[INFANTIL/ADULTO/ETC] escolhidas-->
     <h1 style="text-align: center;">Selecione uma categoria</h1>
 
+    <!--filtros de busca-->
     <div class="d-flex justify-content-center">
 
         <select class="form-select" aria-label="Default select example">
@@ -88,6 +96,7 @@
         
     </div>
     
+    <!--Layout dos produtos-->
     <div class="d-flex justify-content-center">
 
         <div class="card" style="width: 18rem;">
@@ -102,7 +111,7 @@
 
     <script src="comando.js"></script>
     
-    <!-- Option 1: Bootstrap Bundle with Popper--> 
+    <!-- LINK Option 1: Bootstrap Bundle with Popper--> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
