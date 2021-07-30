@@ -58,8 +58,8 @@
             </li>
 
             <li><a href="#"><i class='bx bx-diamond'></i> Acessórios</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class='bx bxs-user'></i> Conta</a></li>
-            <li><a href="#"><i class='bx bxs-cart'></i> Carrinho</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#contaModal"><i class='bx bxs-user'></i> Conta</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#carrinhoModal"><i class='bx bxs-cart'></i> Carrinho</a></li>
         </ul>
         
     </nav>
@@ -70,16 +70,16 @@
     <!--texto que mostrará o público[MASCULINO/FEMININO] e a moda[INFANTIL/ADULTO/ETC] escolhidas-->
     <h1 style="text-align: center;">Selecione uma categoria</h1>
 
-    <!--filtros de busca-->
+    <!--filtros de busca ROUPAS-->
 
     <div class="container mt-5">
-      <!--row para Selects da categoria/marca/tamanho-->
+      
       <div class="row justify-content-center">
 
         <div class="col-md-3 text-center">
           <h4>Categorias</h4>
           <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+            <option selected>Todas</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -89,7 +89,7 @@
         <div class="col-md-3 text-center">
           <h4>Marcas</h4>
           <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+            <option selected>Todas</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -99,7 +99,7 @@
         <div class="col-md-3 text-center">
           <h4>Tamanhos</h4>
           <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+            <option selected>Todos</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -108,34 +108,146 @@
         
       </div>
 
-      <!--row para o botão de busca-->
-      <div class="row align-items-end justify-content-center">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-dark">Buscar aumentar tamanho</button>
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+          <br>
+          <button type="button" class="btn btn-dark btn-lg">Buscar</button>
         </div>
       </div>
 
     </div>
-    
+
+    <!--filtros de busca ACESSÓRIOS-->
+
+    <div class="container mt-5">
+      
+      <div class="row justify-content-center">
+
+        <div class="col-md-3 text-center">
+          <h4>Categorias</h4>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Todas</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <h4>Marcas</h4>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Todas</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+          <br>
+          <button type="button" class="btn btn-dark btn-lg">Buscar</button>
+        </div>
+      </div>
+
+    </div>
+
   <!--Layout dos produtos-->
       
   <!-- Modal Conta -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" id="contaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Minha Conta</h5>
+          <h5 class="modal-title" id="exampleModalLabel">MINHA CONTA</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="modal-body">
-          <p>Nome da conta:</p>
-          <h5>Nenhuma conta foi logada ainda</h5>
+          <!--Tabela com os dados do cliente-->
+          <table class="table table-warning">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Endereço de Entrega</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Matheus Sabatine Lima</th>
+                <td>matheus@email.com</td>
+                <td>bairro lindo rua são hugo Nª111</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Desconectar Conta</button>
+          <button type="button" class="btn btn-danger">Desconectar Conta</button>
+          <button type="button" class="btn btn-primary">Entrar/Trocar Conta</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Modal Carrinho -->
+  <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MEU CARRINHO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <!--TABELA PARA O CARRINHO-->
+    <table class="table table-warning">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Tamanho</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>R$ 50,00</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>R$ 50,00</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+          <td>R$ 50,00</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Desconectar Conta</button>
           <button type="button" class="btn btn-primary">Entrar/Trocar Conta</button>
         </div>
 
