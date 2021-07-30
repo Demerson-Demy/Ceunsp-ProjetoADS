@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODINGNEPAL</title>
+    <title>Vitrine</title>
 
     
 
@@ -29,13 +29,13 @@
     <!--INÍCIO da sidebar-->
     <nav class="sidebar">
         <div class="text"><span class='bx bxs-t-shirt'></span> Brechó</div>
-        <!--ul contém os items da sidebar-->
+        <!--Items da sidebar-->
         <ul>
             <li>
                 <a href="#" class="pasta-homem"><i class='bx bx-male-sign'></i> Masculino
                     <span class='bx bxs-down-arrow seta-homem'></span>
                 </a>
-                <!--uma ul dentro de outra ul corresponde á uma pasta-->
+                <!--pasta masculina-->
                 <ul class="moda-homem">
                     <li><a href="#">Infantil</a></li>
                     <li><a href="#">Jovem</a></li>
@@ -48,7 +48,7 @@
                 <a href="#" class="pasta-mulher"><i class='bx bx-female-sign'></i> Feminino
                     <span class='bx bxs-down-arrow seta-mulher'></span>
                 </a>
-        
+                <!--pasta feminina-->
                 <ul class="moda-mulher">
                     <li><a href="#">Infantil</a></li>
                     <li><a href="#">Jovem</a></li>
@@ -58,7 +58,7 @@
             </li>
 
             <li><a href="#"><i class='bx bx-diamond'></i> Acessórios</a></li>
-            <li><a href="#"><i class='bx bxs-user'></i> Conta</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class='bx bxs-user'></i> Conta</a></li>
             <li><a href="#"><i class='bx bxs-cart'></i> Carrinho</a></li>
         </ul>
         
@@ -71,44 +71,79 @@
     <h1 style="text-align: center;">Selecione uma categoria</h1>
 
     <!--filtros de busca-->
-    <div class="d-flex justify-content-center">
 
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+    <div class="container mt-5">
+      <!--row para Selects da categoria/marca/tamanho-->
+      <div class="row justify-content-center">
 
+        <div class="col-md-3 text-center">
+          <h4>Categorias</h4>
           <select class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
+        </div>
 
+        <div class="col-md-3 text-center">
+          <h4>Marcas</h4>
           <select class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <h4>Tamanhos</h4>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
         
+      </div>
+
+      <!--row para o botão de busca-->
+      <div class="row align-items-end justify-content-center">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-dark">Buscar aumentar tamanho</button>
+        </div>
+      </div>
+
     </div>
     
-    <!--Layout dos produtos-->
-    <div class="d-flex justify-content-center">
+  <!--Layout dos produtos-->
+      
+  <!-- Modal Conta -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Minha Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>Nome da conta:</p>
+          <h5>Nenhuma conta foi logada ainda</h5>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Desconectar Conta</button>
+          <button type="button" class="btn btn-primary">Entrar/Trocar Conta</button>
+        </div>
+
+      </div>
     </div>
+  </div>
 
+    <!-- Caminho para arquivo JavaScript -->
     <script src="comando.js"></script>
     
     <!-- LINK Option 1: Bootstrap Bundle with Popper--> 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-/*todo BODY*/
+/*todo documento*/
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*botão que serve para guardar sidebar*/
+/*cor de fundo*/
+body{
+    background-color: rgb(183, 202, 181);
+}
+
+/*botão para guardar sidebar*/
 .botao{
     position: absolute;
     top: 25px;
@@ -21,10 +26,12 @@
     transition: left 0.4s ease;
 }
 
+/*quando clicado é movido para esquerda, clicando novamente volta para a posição original*/
 .botao.click{
     left: 45px; 
 }
 
+/*Imagem do botão*/
 .botao span{
     color: #fff;
     font-size: 30px;
@@ -33,7 +40,8 @@
     transition: transform 0.4s;
 }
 
-.botao span.rotater{
+/*Animação de girar*/
+.botao span.roda-seta{
     transform: translateY(-10%) rotate(-180deg);
 }
 
@@ -48,7 +56,7 @@
 }
 
 /*guarda a sidebar*/
-.sidebar.show{
+.sidebar.moverSB{/*show*/
     left: -250px; 
 
 }
