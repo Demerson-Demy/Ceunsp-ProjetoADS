@@ -119,6 +119,7 @@
 
     <!--filtros de busca ACESSÓRIOS-->
 
+    <!--
     <div class="container mt-5">
       
       <div class="row justify-content-center">
@@ -153,8 +154,110 @@
       </div>
 
     </div>
+    -->
 
   <!--Layout dos produtos-->
+
+
+  <div class="AreaProdutos">
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="/mar.jpg" class="img-thumbnail" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">R$ 34,99</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">NOME: REGATA PRETA</li>
+          <li class="list-group-item">TAMANHO: M</li>
+          <li class="list-group-item">MARCA: Luxo</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!--FIM layout de produtos-->
       
   <!-- Modal Conta -->
   <div class="modal fade" id="contaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -168,7 +271,7 @@
 
         <div class="modal-body">
           <!--Tabela com os dados do cliente-->
-          <table class="table table-warning">
+          <table class="table table-primary">
             <thead>
               <tr>
                 <th scope="col">Nome</th>
@@ -211,44 +314,53 @@
 
         <div class="modal-body">
           <!--TABELA PARA O CARRINHO-->
-    <table class="table table-warning">
+    <table class="table table-warning table-striped table-bordered">
       <thead>
         <tr>
           <th scope="col">Nome</th>
+          <th scope="col">Categoria</th>
           <th scope="col">Tamanho</th>
           <th scope="col">Marca</th>
-          <th scope="col">Quantidade</th>
+          <th scope="col">Quant.</th>
           <th scope="col">Preço</th>
+          <th scope="col">Opções</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>R$ 50,00</td>
+          <th scope="row">camisa preta</th>
+          <td>Roupa Masc. Adulto</td>
+          <td>P</td>
+          <td>Lacoste</td>
+          <td>3</td>
+          <td>R$ 95,00</td>
+          <td><button type="button" class="btn btn-danger">Remover</button></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>R$ 50,00</td>
+          <th scope="row">moletom azul</th>
+          <td>Roupa Femi. Plus Size</td>
+          <td>GGG</td>
+          <td>Levi's</td>
+          <td>1</td>
+          <td>R$ 35,00</td>
+          <td><button type="button" class="btn btn-danger">Remover</button></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-          <td>R$ 50,00</td>
+          <th scope="row">jeans amarelo</th>
+          <td>Roupa Masc. Infantil</td>
+          <td>M</td>
+          <td>Calvin Klein</td>
+          <td>1</td>
+          <td>R$ 150,00</td>
+          <td><button type="button" class="btn btn-danger">Remover</button></td>
         </tr>
       </tbody>
     </table>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger">Desconectar Conta</button>
-          <button type="button" class="btn btn-primary">Entrar/Trocar Conta</button>
+          <p>TOTAL: R$470,00</p>
+          <button type="button" class="btn btn-success">Concluir Compra</button>
         </div>
 
       </div>

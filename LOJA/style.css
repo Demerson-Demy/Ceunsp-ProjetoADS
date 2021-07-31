@@ -174,3 +174,12 @@ nav ul li a span.rotate{
     transform: translateY(-50%) rotate(-180deg);
 
 }
+
+/*container personalizado para os produtos*/
+.AreaProdutos{
+    padding-left: 320px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
