@@ -16,7 +16,7 @@ body{
 
 /*botão para guardar sidebar*/
 .botao{
-    position: absolute;
+    position: fixed;
     top: 25px;
     left: 260px;
     height: 35px;

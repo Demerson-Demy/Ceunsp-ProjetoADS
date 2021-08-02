@@ -74,7 +74,7 @@
 
     <div class="container mt-5">
       
-      <div class="row justify-content-center">
+      <div class="row justify-content-end">
 
         <div class="col-md-3 text-center">
           <h4>Categorias</h4>
@@ -108,8 +108,8 @@
         
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-md-3 text-center">
+      <div class="row justify-content-end">
+        <div class="col-md-9 text-center">
           <br>
           <button type="button" class="btn btn-dark btn-lg">Buscar</button>
         </div>
@@ -119,7 +119,7 @@
 
     <!--filtros de busca ACESSÓRIOS-->
 
-    <!--
+    <!--    
     <div class="container mt-5">
       
       <div class="row justify-content-center">
@@ -171,9 +171,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -186,9 +187,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -201,9 +203,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -216,9 +219,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -231,9 +235,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -246,9 +251,10 @@
         </div>
 
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">NOME: REGATA PRETA</li>
           <li class="list-group-item">TAMANHO: M</li>
-          <li class="list-group-item">MARCA: Luxo</li>
+          <li class="list-group-item">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#produtoModal" class="btn btn-primary">+ Detalhes</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -299,12 +305,64 @@
   </div>
 
 
+  <!-- Modal Produto -->
+  <div class="modal fade" id="produtoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PRODUTO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <!--FOTO DO PRODUTO-->
+          <img src="/mar.jpg" class="rounded mx-auto d-block" alt="...">
+          <br>
+
+          <!--TABELA PARA O CARRINHO-->
+    <table class="table table-warning table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Tamanho</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Estoque</th>
+          <th scope="col">Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">camisa preta</th>
+          <td>Roupa Masc. Adulto</td>
+          <td>P</td>
+          <td>Lacoste</td>
+          <td>12</td>
+          <td>R$ 95,00</td>
+        </tr>
+        
+      </tbody>
+    </table>
+        </div>
+
+        <div class="modal-footer">
+          <p>#botao de quantidade</p><p>TOTAL R$ </p>
+          <button type="button" class="btn btn-primary">+ Adicionar ao Carrinho</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
 
 
 
   <!-- Modal Carrinho -->
   <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
 
         <div class="modal-header">
