@@ -444,7 +444,17 @@
 
         <div class="modal-footer">
           <p>TOTAL: R$470,00</p>
-          <button type="button" class="btn btn-success">Concluir Compra</button>
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class='bx bx-dollar'></i> Pagar
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class='bx bx-credit-card'></i> Cartão de Crédito</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"><i class='bx bx-credit-card-alt' ></i> Cartão de Débito</a></li>
+            </ul>
+          </div>
         </div>
 
       </div>
